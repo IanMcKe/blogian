@@ -2,3 +2,23 @@
 @import "base/base";
 @import "neat/neat";
 @import "refills/refills";
+
+.container {
+  @include outer-container;
+  padding-top: 2em;
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  h2 {
+    @include span-columns(12);
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .col-4 {
+    @include span-columns(4);
+  }
+}
