@@ -31,4 +31,27 @@ section {
       @include span-columns(4);
     }
   }
+
+  #skills-1 {
+    @include span-columns(6);
+    @include pad();
+    @include media($mobile) {
+      @include span-columns(6);
+    }
+    text-align: center;
+  }
+
+  #skills-2 {
+    @include span-columns(6);
+    @include pad();
+    @include media($mobile) {
+      @include span-columns(6);
+    }
+    text-align: center;
+  }
+}
+
+.full-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
