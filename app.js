@@ -12,7 +12,18 @@ blogian.config(function($stateProvider, $urlRouterProvider) {
       },
       'body': {
         templateUrl: "partials/main.html",
+      },
+      'footer': {
+        templateUrl: "partials/footer.html"
       }
     }
   });
+
+  // $stateProvider.state('articles', {
+  //   url: "/articles",
+  // });
+  //
+  // $stateProvider.state('article', {
+  //   url: "articles/:articleId"
+  // });
 });
