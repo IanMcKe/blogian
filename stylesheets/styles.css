@@ -661,7 +661,7 @@ header.navigation {
   background-size: cover; }
 
 .footer-2 {
-  background: #006064;
+  background: #0097A7;
   padding: 1.5em;
   width: 100%;
   display: inline-block; }
@@ -783,8 +783,7 @@ section {
     content: "";
     display: table; }
   .container h1 {
-    font-size: 2em;
-    text-align: center; }
+    font-size: 2em; }
   .container h2 {
     float: left;
     display: block;
@@ -802,7 +801,7 @@ section {
     padding: 2.35765%; }
     .container .col-4:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       .container .col-4 {
         float: left;
         display: block;
@@ -810,16 +809,32 @@ section {
         width: 100%; }
         .container .col-4:last-child {
           margin-right: 0; } }
-  .container #skills-1 {
+  .container .col-6 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
+    padding: 2.35765%; }
+    .container .col-6:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 700px) {
+      .container .col-6 {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 153.71149%; }
+        .container .col-6:last-child {
+          margin-right: 0; } }
+  .container #skills-1 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
     padding: 2.35765%;
-    text-align: center; }
+    font-size: 1.1em; }
     .container #skills-1:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       .container #skills-1 {
         float: left;
         display: block;
@@ -830,13 +845,13 @@ section {
   .container #skills-2 {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-right: 4.82916%;
+    width: 47.58542%;
     padding: 2.35765%;
-    text-align: center; }
+    font-size: 1.1em; }
     .container #skills-2:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       .container #skills-2 {
         float: left;
         display: block;
@@ -848,5 +863,8 @@ section {
 .full-container {
   padding-top: 2em;
   padding-bottom: 2em; }
+
+.centered {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
