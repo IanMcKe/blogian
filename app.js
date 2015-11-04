@@ -65,11 +65,11 @@ blogian.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/header.html"
       },
       'body': {
-        templateUrl: "partials/meta-article.html"
+        templateUrl: "partials/coming-soon.html"
       },
-      'footer': {
-        templateUrl: "partials/footer.html"
-      }
+      // 'footer': {
+      //   templateUrl: "partials/footer.html"
+      // }
     }
   });
 
@@ -95,11 +95,11 @@ blogian.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/header.html"
       },
       'body': {
-        templateUrl: "partials/karma-article.html"
+        templateUrl: "partials/coming-soon.html"
       },
-      'footer': {
-        templateUrl: "partials/footer.html"
-      }
+      // 'footer': {
+      //   templateUrl: "partials/footer.html"
+      // }
     }
   });
 });

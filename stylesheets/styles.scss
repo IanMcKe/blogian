@@ -17,10 +17,16 @@ section {
     font-size: 2em;
   }
 
+  h1#euler-formula {
+    font-size: 3em;
+    margin-bottom: .35em;
+  }
+
   h2 {
     @include span-columns(12);
     font-size: 1.2em;
     text-align: center;
+    margin-top: .75em;
   }
 
   .col-4 {
@@ -29,6 +35,7 @@ section {
     @include media($mobile) {
       @include span-columns(4);
     }
+    text-align: center;
   }
 
   .col-6 {
@@ -67,7 +74,6 @@ section {
 .centered {
   text-align: center;
 }
-
 
 //About page
 section#about {
@@ -108,3 +114,21 @@ div#contact {
   }
 }
 //////////////
+
+//Coming Soon page
+section#coming-soon {
+  $tall-screen: new-breakpoint(min-height 400px);
+  @include media($tall-screen) {
+    @include calc(height, "100vh - 80px");
+  }
+}
+
+div#coming-soon {
+  $tall-screen: new-breakpoint(min-height 400px);
+  @include media($tall-screen) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+///////////////
