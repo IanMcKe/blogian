@@ -41,7 +41,7 @@ blogian.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/contact.html"
       }
     }
-  }); 
+  });
 
   $stateProvider.state('articles', {
     url: "/articles",
@@ -57,8 +57,19 @@ blogian.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   });
-  //
-  // $stateProvider.state('article', {
-  //   url: "articles/:articleId"
-  // });
+
+  $stateProvider.state('meta-article', {
+    url: "articles/meta-article",
+    views: {
+      'header': {
+        templateUrl: "partials/header.html"
+      },
+      'body': {
+        templateUrl: "partials/meta-article.html"
+      },
+      'footer': {
+        templateUrl: "partials/footer.html"
+      }
+    }
+  });
 });
