@@ -384,7 +384,7 @@ header.navigation {
         header.navigation li.more > a {
           margin-right: 1em; } }
       header.navigation li.more > a:after {
-        content: 'ΓÇ║';
+        content: '›';
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
@@ -771,9 +771,6 @@ header.navigation {
 
 section {
   background-color: #E0F7FA; }
-  section #about {
-    height: -webkit-calc(100vh - 80px);
-    height: calc(100vh - 80px); }
 
 .container {
   max-width: 68em;
@@ -869,5 +866,19 @@ section {
 
 .centered {
   text-align: center; }
+
+@media screen and (min-height: 400px) {
+  section#about {
+    height: -webkit-calc(100vh - 80px);
+    height: calc(100vh - 80px); } }
+
+@media screen and (min-height: 400px) {
+  div#about {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
+
+p#about {
+  font-size: 1.3em; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,10 +5,6 @@
 
 section {
   background-color: #E0F7FA;
-
-  #about {
-    @include calc(height, "100vh - 80px");
-  }
 }
 
 .container {
@@ -71,3 +67,26 @@ section {
 .centered {
   text-align: center;
 }
+
+
+//About page
+section#about {
+  $tall-screen: new-breakpoint(min-height 400px);
+  @include media($tall-screen) {
+    @include calc(height, "100vh - 80px");
+  }
+}
+
+div#about {
+  $tall-screen: new-breakpoint(min-height 400px);
+  @include media($tall-screen) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+p#about {
+  font-size: 1.3em;
+}
+///////////////
