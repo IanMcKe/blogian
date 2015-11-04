@@ -384,7 +384,7 @@ header.navigation {
         header.navigation li.more > a {
           margin-right: 1em; } }
       header.navigation li.more > a:after {
-        content: '›';
+        content: 'ΓÇ║';
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
@@ -771,9 +771,9 @@ header.navigation {
 
 section {
   background-color: #E0F7FA; }
-
-div#about {
-  padding: 21vh; }
+  section #about {
+    height: -webkit-calc(100vh - 80px);
+    height: calc(100vh - 80px); }
 
 .container {
   max-width: 68em;
@@ -869,12 +869,5 @@ div#about {
 
 .centered {
   text-align: center; }
-
-p#about {
-  font-size: 1.5em; }
-
-footer#about {
-  position: absolute;
-  bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */

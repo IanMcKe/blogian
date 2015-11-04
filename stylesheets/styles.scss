@@ -5,10 +5,10 @@
 
 section {
   background-color: #E0F7FA;
-}
 
-div#about {
-  padding: 21vh;
+  #about {
+    @include calc(height, "100vh - 80px");
+  }
 }
 
 .container {
@@ -70,13 +70,4 @@ div#about {
 
 .centered {
   text-align: center;
-}
-
-p#about {
-  font-size: 1.5em;
-}
-
-footer#about {
-  position: absolute;
-  bottom: 0;
 }
