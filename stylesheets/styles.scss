@@ -90,3 +90,21 @@ p#about {
   font-size: 1.3em;
 }
 ///////////////
+
+//Contact page
+section#contact {
+  $tall-screen: new-breakpoint(min-height 400px);
+  @include media($tall-screen) {
+    @include calc(height, "100vh - 80px");
+  }
+}
+
+div#contact {
+  $tall-screen: new-breakpoint(min-height 400px);
+  @include media($tall-screen) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+//////////////

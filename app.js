@@ -31,6 +31,18 @@ blogian.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
+  $stateProvider.state('contact', {
+    url: "/contact",
+    views: {
+      'header': {
+        templateUrl: "partials/header.html"
+      },
+      'body': {
+        templateUrl: "partials/contact.html"
+      }
+    }
+  }); 
+
   $stateProvider.state('articles', {
     url: "/articles",
     views: {
