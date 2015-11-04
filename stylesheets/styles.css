@@ -772,6 +772,9 @@ header.navigation {
 section {
   background-color: #E0F7FA; }
 
+div#about {
+  padding: 21vh; }
+
 .container {
   max-width: 68em;
   margin-left: auto;
@@ -866,5 +869,12 @@ section {
 
 .centered {
   text-align: center; }
+
+p#about {
+  font-size: 1.5em; }
+
+footer#about {
+  position: absolute;
+  bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */

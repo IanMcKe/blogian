@@ -7,6 +7,10 @@ section {
   background-color: #E0F7FA;
 }
 
+div#about {
+  padding: 21vh;
+}
+
 .container {
   @include outer-container;
   $mobile: new-breakpoint(max-width 700px 4);
@@ -66,4 +70,13 @@ section {
 
 .centered {
   text-align: center;
+}
+
+p#about {
+  font-size: 1.5em;
+}
+
+footer#about {
+  position: absolute;
+  bottom: 0;
 }
