@@ -59,13 +59,43 @@ blogian.config(function($stateProvider, $urlRouterProvider) {
   });
 
   $stateProvider.state('meta-article', {
-    url: "articles/meta-article",
+    url: "/articles/meta-article",
     views: {
       'header': {
         templateUrl: "partials/header.html"
       },
       'body': {
         templateUrl: "partials/meta-article.html"
+      },
+      'footer': {
+        templateUrl: "partials/footer.html"
+      }
+    }
+  });
+
+  $stateProvider.state('mean-article', {
+    url: "/articles/mean-article",
+    views: {
+      'header': {
+        templateUrl: "partials/header.html"
+      },
+      'body': {
+        templateUrl: "partials/mean-article.html"
+      },
+      'footer': {
+        templateUrl: "partials/footer.html"
+      }
+    }
+  });
+
+  $stateProvider.state('karma-article', {
+    url: "/articles/karma-article",
+    views: {
+      'header': {
+        templateUrl: "partials/header.html"
+      },
+      'body': {
+        templateUrl: "partials/karma-article.html"
       },
       'footer': {
         templateUrl: "partials/footer.html"

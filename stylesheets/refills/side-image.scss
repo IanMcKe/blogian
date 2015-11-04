@@ -11,6 +11,16 @@
 
   background: $side-image-content-background;
 
+  @include transition (all 0.2s ease-in-out);
+
+  &:focus,
+  &:hover {
+    background-color: darken($side-image-content-background, 10%);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
   @include media($large-screen) {
     @include row(table);
   }
